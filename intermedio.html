@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generar Solicitud</title>
+  <style>
+    /* Estilos CSS para centrar los botones */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s;
+      margin: 10px; /* Agregamos un espacio entre botones */
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="redirigirASolicitud()">Generar Solicitud</button>
+  <button onclick="consultarEstado()">Consultar estado de la solicitud</button>
+  <button onclick="realizarPago()">Realizar pago</button>
+  <button onclick="verCarnetDigital()">Ver carnet digital</button>
+  
+
+
+  <script>
+    function redirigirASolicitud() {
+      // Redirige a la página solicitud.html
+      window.location.href = 'solicitud.html';
+    }
+
+    function consultarEstado() {
+      // Redirige a la página donde se consulta el estado de la solicitud (puede ser solicitud_estado.html)
+      window.location.href = 'solicitud_estado.html';
+    }
+
+    function verCarnetDigital() {
+      // Redirige a la página donde se consulta el estado de la solicitud (puede ser solicitud_estado.html)
+      window.location.href = 'carnet.html';
+    }
+    function realizarPago() {
+      // Redirige a la página donde se consulta el estado de la solicitud (puede ser solicitud_estado.html)
+      window.location.href = 'pago.html';
+    }
+  </script>
+
+</body>
+</html>
